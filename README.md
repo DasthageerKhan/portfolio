@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/68e726f5-b058-4e43-a6ec-948dc039c73a)# portfolio
+# portfolio
 Welcome to my interactive personal portfolio built using Streamlit – a lightweight and elegant web app framework for Python. This app showcases my skills, education, projects, certifications, and more in a visually appealing and responsive format.
 
 
@@ -60,6 +60,9 @@ bash
 Copy
 Edit
 streamlit run app.py
+
+🌐 Live Preview
+![image](https://github.com/user-attachments/assets/68e726f5-b058-4e43-a6ec-948dc039c73a)
 
 🙋‍♂️ About Me
 Hi! I'm Dasthageer Khan, a Python developer with a passion for UI/UX design and automation. I enjoy building efficient and user-friendly software that bridges design with development.
