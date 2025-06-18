@@ -24,8 +24,63 @@ set_bg_image("edited.png")
 st.set_page_config(page_title="Portfolio", layout="wide")
 
 # === Title and Header ===
-st.markdown("<h1 style='text-align: center; color: white;'>Dasthageer Khan</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: lightgray;'>Python Developer | UI/UX Designer | Automation Enthusiast</h4>", unsafe_allow_html=True)
+st.markdown("""
+<style>
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 30% }
+  100% { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typing-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  padding-left: 30px;
+}
+
+.typing-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  animation: typing 6s steps(30, end) infinite, blink 0.75s step-end infinite;
+}
+</style>
+
+<div class="typing-container">
+  <div class="typing-text">Dasthageer Khan</div>
+</div>
+""", unsafe_allow_html=True)
+# Add this before or near where you call the animated subtitle
+st.markdown("""
+<style>
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Then this animated subtitle will now work
+st.markdown("""
+<div style='text-align: left; color: lightgray; font-size: 1.2rem; animation: fadeSlide 3s ease forwards; opacity: 0; padding-left: 30px;'>
+    Python Developer | UI/UX Designer | Automation Enthusiast
+</div>
+""", unsafe_allow_html=True)
 st.markdown("---")
 
 # === Contact Section ===
